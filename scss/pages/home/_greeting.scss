@@ -1,0 +1,32 @@
+.greeting {
+   padding: 129px 0 71px;
+   &__title, &__subtitle {
+      max-width: 497px;
+   }
+
+   &-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+
+   &-text > *:not(:last-child){
+      padding-bottom: 38px;
+   }
+   
+   &__img {
+      align-self: flex-start;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .greeting {
+
+      &-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         text-align: center;
+      }
+   }
+}
